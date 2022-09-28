@@ -6,6 +6,13 @@ for (let i = 0; i < data.length; i += 1) {
 	// Creating a new div element and giving it a class name
 	const newDiv = document.createElement('div');
 	newDiv.className = 'item'
+    
+    // Adding an even or odd id to each card
+       if (i % 2 == 0) {
+        newDiv.id = 'even'
+    } else {
+        newDiv.id = 'odd'
+    }
 
 	// ************* IMAGE *************
     // Creating an image element
@@ -13,6 +20,8 @@ for (let i = 0; i < data.length; i += 1) {
     img.src = data[i].image
 	img.width = 300
 	img.height = 300
+ 
+    
 	// Adding the image to the div
 	newDiv.appendChild(img)
 
@@ -26,7 +35,7 @@ for (let i = 0; i < data.length; i += 1) {
     // ************* PRICE *************
     // Creating price element
     const price = document.createElement('p')
-    price.innerText = data[i].price
+    price.innerText = data[i].price + ' CAD'
     // adding the price to the new div
     newDiv.appendChild(price)
 
@@ -35,7 +44,7 @@ for (let i = 0; i < data.length; i += 1) {
     const button = document.createElement('button')
     // Adding an  id name to the button
     button.id = data[i].name
-    // creates a custom attribute called data-price. That will hold price for each element in the button
+    // Creating a custom attribute called data-price. That will hold price for each element in the button
     button.dataset.price = data[i].price
     button.innerHTML = "Add to Cart"
     newDiv.appendChild(button)
