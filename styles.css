@@ -39,6 +39,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
 }
 
 nav {
@@ -69,10 +72,13 @@ nav {
 .items img {
     width: 100%;
     height: auto;
+    /* height: 45% */
 }
 
 .item {
     border: 1px solid;
+    border-radius: 8px;
+    padding-bottom: 1em;
 }
 
 #even {
@@ -88,7 +94,7 @@ nav {
 }
 
 .item p { 
-    font-size: 0.7em;
+    font-size: 0.65em;
     padding: 0 1em 0 1em;
 }
 

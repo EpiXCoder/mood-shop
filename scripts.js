@@ -53,3 +53,23 @@ for (let i = 0; i < data.length; i += 1) {
     // putting the newly created div inside the items container
 	itemsContainer.appendChild(newDiv)
 }
+
+const cart = [ ]
+
+const obj = {
+
+}
+
+function addItem(name, price) {
+    const item = {name: name, price: price, qty: 1}
+    cart.push(item)
+}
+
+function showItems() {
+    console.log(cart[0])
+}
+
+addItem('Apple', 0.99)
+addItem('Apple', 0.99)
+addItem('Opinion', 0.02)
+showItems()
