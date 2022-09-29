@@ -50,6 +50,9 @@ nav {
     font-size: 1em;
     line-height: 1;
     padding-bottom: 0;
+    border-top: #f3d250 solid 5px;
+    border-left: #f3d250 solid 5px;
+    border-bottom: #f3d250 solid 5px;
 }
 
   .page-header a {
@@ -82,10 +85,11 @@ nav {
 }
 
 #even {
-    background-color: #fdf9d9;
+    background-color: #f3d250;
 }
 #odd {
-    background-color: #f3d485;
+    background-color: #f78888;
+    
 }
 
 .item p { 
@@ -100,14 +104,14 @@ nav {
 
 #even button { 
     margin: 0 20% 0 20%;
-    background-color: #f3d485;
+    background-color: #f78888;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #303c6c;
   }
 
 #odd button { 
     margin: 0 20% 0 20%;
-    background-color: #fdf9d9;
+    background-color:  #f3d250;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #303c6c;
 }
@@ -115,13 +119,14 @@ nav {
   /* Footer and Cart */
 
 footer {
-    background-color: #f4976c;
+    background-color: #5da2d5;
     font-size: 0.8em;
 }
 
 h5 {
     font-size: 1.5em;
     text-align: center;
+    padding-top: 1em;
 }
 
 #item-list > li {
