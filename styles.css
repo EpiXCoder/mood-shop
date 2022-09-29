@@ -88,11 +88,6 @@ nav {
     background-color: #f3d485;
 }
 
-.item img {
-    /* height: 50%; */
-    
-}
-
 .item p { 
     font-size: 0.65em;
     padding: 0 1em 0 1em;
@@ -103,16 +98,72 @@ nav {
     font-weight: bold;
  }
 
- #even button { 
+#even button { 
     margin: 0 20% 0 20%;
     background-color: #f3d485;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #303c6c;
   }
 
-  #odd button { 
+#odd button { 
     margin: 0 20% 0 20%;
     background-color: #fdf9d9;
     border-radius: 8px;
     box-shadow: 2px 2px 2px #303c6c;
-  }
+}
+
+  /* Footer and Cart */
+
+footer {
+    background-color: #f4976c;
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#item-list > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 50 px;
+    margin: auto;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 2em;
+    font-family: Helvetica;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input, button {
+    padding: 0.25;
+    border: 1px solid;
+    border-radius: 0.25em;
+}
+
+button {
+    min-width: 2em;
+}
+
+#cart-total {
+   font-size: 1.5em; 
+   border-top: 1px solid;
+   font-weight: bold;
+}
+
+#cart-qty {
+    font-size: 1.2em; 
+    border-bottom: 1px solid;
+}
+
